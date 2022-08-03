@@ -49,3 +49,9 @@ Por último, se generará el ejecutable y el juego podrá ser iniciado con el si
 - Este juego originalmente está diseñado para ser jugado en una resolución de 600x800. No obstante, este puede ser cambiado modificando la macro `hPantalla` de `main.c` para así especificar la altura de la pantalla. Se puede hacer lo mismo con la anchura, `wPantalla`, aunque no es recomendable. La modificación de estos parámetros puede afectar a la experiencia de juego final, obteniendo tamaños para los que no se diseñó específicamente el juego.
 
 - Cualquier otro parámetro de las macros de `main.c` puede ser cambiado si se quiere "trastear" un poco con el proyecto. Recuerda siempre recompilar tras introducir cualquier nuevo cambio.
+
+# Capturas de pantalla
+
+![Screenshot menú](https://github.com/Adrian-2105/SpaceWarrior/blob/main/docs/screenshots/menu.png)
+
+![Screenshot menú](https://github.com/Adrian-2105/SpaceWarrior/blob/main/docs/screenshots/partida.png)
