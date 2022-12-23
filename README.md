@@ -1,57 +1,57 @@
 ![Space Warrior](https://github.com/Adrian-2105/SpaceWarrior/blob/main/assets/logo.png)
 
-Space Warrior es un pequeño videojuego de tipo *shoot 'em up* que presenté como un proyecto para una asignatura de mi 1º año de universidad (por lo que el código presentado es bastante mejorable, sobre todo en cuanto a estructuración del proyecto). Este toma como inspiración los juegos *1943* y *Gemini Wing* (tomando de este último algunos de sus assets).
+Space Warrior is a small *shoot 'em up* videogame that I presented as a project for a subject of my 1st year of university at Computer Engineering (so the code presented is quite improvable). This game takes as inspiration the games *1943* and *Gemini Wing* (taking from the latter some of its assets).
 
-El juego consiste en controlar una nave que deberá aguantar el mayor tiempo posible a la vez que va destruyendo enemigos, esquivando los disparos y recogiendo diversos *power UP's* (hay que descubrir para qué sirve cada uno ;) ). El objetivo final del juego es obtener las puntuaciones más altas y coronarnos en la tabla de los récords.
+The game consists on controlling a spaceship that will have to survive for as long as possible while destroying enemies, dodging shots and collecting different *power UP's* (you have to discover the purpose of each one ;) ). The final goal of the game is to get the highest scores and be crowned in the highscore table.
 
-# Cómo compilarlo y jugarlo
+# How to compile and play it
 
-Por el momento, en este repositorio **únicamente se da soporte para ser ejecutado en Linux, concretamente Ubuntu**. También puede ser compilado y ejecutado en Windows y otras distribuciones de Linux adecuando la instalación a cada uno de ellos.
+For the moment, this repository **only provides support for running on Linux, specifically Ubuntu**. It can also be compiled and executed on Windows and other Linux distributions by adapting the installation of the libraries and dependencies to each of them.
 
-### Requisitos previos
+### Prerequisites
 
-Antes de poder instalarlo es necesario instalar la librería SDL y algunos paquetes adicionales. Se ofrece un script de para su autoinstalación ejecutando el siguiente comando:
+Before you can install it, you need to install the SDL library and some additional packages. A script is provided for self-installation by running the following command:
 
 ```bash
 sudo bash install_dependencies.sh
 ```
 
-**Nota:** para otras distribuciones de Linux, modificar convenientemente dicho script para poder instalar los mismos paquetes desde el gestor de paquetes correspondiente.
+**Note:** for other Linux distributions, modify this script accordingly to be able to install the same packages from the corresponding package manager.
 
-### Compilación y ejecución
+### Compilation and execution
 
-Tras haber instalado todos los requisitos previos con el script, la compilación debería de poder realizarse correctamente con el siguiente comando:
+After having installed all prerequisites with the script, the compilation should be done correctly with the following command:
 
 ```bash
 make
 ```
 
-Por último, se generará el ejecutable y el juego podrá ser iniciado con el siguiente comando:
+Finally, the executable will be generated and the game can be started by executing it with the following command:
 
 ```bash
 ./SpaceWarrior
 ```
 
-# Controles
+# Controls
 
-- **Menús**
-  - `UP / DOWN`: desplazamiento
-  - `ENTER`: aceptar
-  - `ESC`: retroceder
-- **Partida**
-  - `UP / DOWN / LEFT / RIGHT`: movimiento de la nave
-  - `X`: disparar balas (ilimitadas)
-  - `C`: disparar bomba (limitadas)
-  - `ESC`: menú de pausa
+- **Menus**
+  - `UP / DOWN`: scroll
+  - `ENTER`: accept
+  - `ESC`: Back
+- **PARTING** **PARTING
+  - `UP / DOWN / LEFT / RIGHT`: ship movement
+  - `X`: fire bullets (unlimited)
+  - `C`: fire bomb (limited)
+  - `ESC`: pause menu
   
-# Configuración
+# Configuration
 
-- Este juego originalmente está diseñado para ser jugado en una resolución de 600x800. No obstante, este puede ser cambiado modificando la macro `hPantalla` de `main.c` para así especificar la altura de la pantalla. Se puede hacer lo mismo con la anchura, `wPantalla`, aunque no es recomendable. La modificación de estos parámetros puede afectar a la experiencia de juego final, obteniendo tamaños para los que no se diseñó específicamente el juego.
+- This game is originally designed to be played at a resolution of 600x800. However, this can be changed by modifying the `hPantalla` macro of `main.c` to specify the height of the screen. The same can be done for the width, `wPantalla`, although this is not recommended. Modifying these parameters may affect the final game experience, resulting in sizes for which the game was not specifically designed.
 
-- Cualquier otro parámetro de las macros de `main.c` puede ser cambiado si se quiere "trastear" un poco con el proyecto. Recuerda siempre recompilar tras introducir cualquier nuevo cambio.
+- Any other parameters of the `main.c` macros can be changed if you want to play around with the project. Remember to always recompile after making any new changes.
 
-# Capturas de pantalla
+# Screenshots
 
-![Screenshot menú](https://github.com/Adrian-2105/SpaceWarrior/blob/main/docs/screenshots/menu.png)
+![Main Menu](https://github.com/Adrian-2105/SpaceWarrior/blob/main/docs/screenshots/menu.png)
 
-![Screenshot menú](https://github.com/Adrian-2105/SpaceWarrior/blob/main/docs/screenshots/partida.png)
+![Game](https://github.com/Adrian-2105/SpaceWarrior/blob/main/docs/screenshots/partida.png)
