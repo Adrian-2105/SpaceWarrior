@@ -10,14 +10,12 @@ fi
 # Install dependencies
 sudo apt-get install -y pkg-config xorg openbox xorg-dev
 
-# Install SDL library
-cd ~
-git clone https://github.com/libsdl-org/SDL
+# Install SDL library from sources
+cd /tmp
+git clone https://github.com/libsdl-org/SDL.git -b SDL2
 cd SDL
 mkdir build
 cd build
 ../configure
-make -j4
+make -j8
 sudo make install
-cd ~
-rm -rf SDL
