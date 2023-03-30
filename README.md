@@ -37,11 +37,11 @@ Finally, the executable will be generated and the game can be started by executi
 - **Menus**
   - `UP / DOWN`: scroll
   - `ENTER`: accept
-  - `ESC`: Back
-- **PARTING** **PARTING
+  - `ESC`: back
+- **During the game**
   - `UP / DOWN / LEFT / RIGHT`: ship movement
-  - `X`: fire bullets (unlimited)
-  - `C`: fire bomb (limited)
+  - `X`: fire bullets (unlimited ammo)
+  - `C`: fire bomb (limited ammo)
   - `ESC`: pause menu
   
 # Configuration
